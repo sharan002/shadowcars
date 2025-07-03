@@ -1,0 +1,106 @@
+
+
+<div class="row gx-4 gx-lg-5">
+    <div class="col-md-4 mb-5">
+        <div class="card h-1">
+            <div class="card-body d-flex flex-column">
+                <h2 class="card-title">SEDAN CARS</h2>
+                <p class="card-text">A sedan is a four-door vehicle with a cargo area (trunk) that’s positioned behind the farthest rear pillars, often enclosed and separated from the passenger cabin. The enclosed trunk provides added privacy and security for your valuables.</p>
+            </div>
+            <div class="card-footer mt-auto">
+                <button class="btn btn-primary btn-sm" (click)="toggleMoreInfo1()">More Info</button>
+            </div>
+        </div>
+    
+        <div *ngIf="showMoreInfo1" class="more-info-content">
+            <h3>SEDAN CARS</h3>
+            <p>Additional information about SEDAN CARS:</p>
+            
+            <div class="image-container">
+                <div class="image-wrapper text-center">
+                    <img src="assets/-bmw-m3-1.jpg" alt="Image 1" (click)="openModal('assets/-bmw-m3-1.jpg', 'Image 1')">
+                    <img src="assets/bmw_m3_2.jpg" alt="Image 3" (click)="openModal('assets/bmw_m3_2.jpg', 'Image 3')" id="myImg2">
+                    <img src="assets/bmw-m3-3.jpg" alt="Image 4" (click)="openModal('assets/bmw-m3-3.jpg', 'Image 4')" id="myImg3">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <div class="col-md-4 mb-5">
+        <div class="card h-1">
+            <div class="card-body d-flex flex-column">
+                <h2 class="card-title">Sport-Utility Vehicle</h2>
+                <p class="card-text">SUVs also have raised ground clearance that makes getting in and out of the cabin and driving over rugged terrain easier.Their rugged body-on-frame platform and ideal type of vehicle for off-roading and driving in harsh weather conditions.</p>
+            </div>
+            <div class="card-footer mt-auto">
+                <button class="btn btn-primary btn-sm" (click)="toggleMoreInfo2()">More Info</button>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <div class="col-md-4 mb-5">
+        <div class="card h-1">
+            <div class="card-body d-flex flex-column">
+                <h3 class="card-title">Pickup Truck</h3>
+                <p class="card-text">A pickup truck or pickup is a type of vehicle with an enclosed cab for passengers and an open cargo area with a tailgate (truck bed). In Australia and New Zealand, all varieties of pickup trucks are called utes, which is short for ‘utility vehicle’.</p>
+            </div>
+            <div class="card-footer mt-auto">
+                <button class="btn btn-primary btn-sm" (click)="toggleMoreInfo3()">More Info</button>
+            </div>
+        </div>
+    
+
+    </div>    
+</div>
+
+
+<div *ngIf="showMoreInfo2" class="more-info-content">
+    <h3>Sport-Utility Vehicle (SUV)</h3>
+
+    <p>Additional information about Sport-Utility Vehicle (SUV):</p>
+
+    <div class="image-container">
+        <div class="image-wrapper text-center">
+            <img src='assets/range-rover-1.jpg' alt="Image 1" (click)="openModal('https://www.wallpaperflare.com/static/315/545/111/range-rover-evoque-hamann-black-range-wallpaper.jpg', 'Image 1')">
+           
+            <img src="assets/rangerover-2.jpg" alt="Image 3" (click)="openModal('https://files.hodoor.world/images/products/images-products-1-4152-232992824-landrover_rangerover_evoque_07.jpg', 'Image 3')" id="myImg2">
+            <img src="assets/range-rover-3.jpg" alt="Image 4" (click)="openModal('https://tse3.mm.bing.net/th/id/OIP.ZMZIR5H3xS9vvVU7Pozl6wAAAA?pid=ImgDet&rs=1', 'Image 4')" id="myImg3">
+        </div>  
+    </div>
+</div>
+
+
+<div id="myModal" class="modal">
+    <span class="close" (click)="closeModal()">&times;</span>
+    <img class="modal-content" id="img01" [src]="modalImageSrc" >
+    <div id="caption">{{ modalCaption }}</div>
+  </div>
+
+  <div *ngIf="showMoreInfo3" class="more-info-content "> 
+    <h3>Pickup Truck</h3>
+    <p>Additional information about Pickup Truck:</p>
+    <div class="image-container">
+        <div class="image-wrapper text-center">
+            <img src="assets/car-truck-1.jpg" alt="Image 1" (click)="openModal('assets/car-truck-1.jpg', 'Image 1')"> 
+            <img src="assets/truck-2.jpg" alt="Image 3" (click)="openModal('assets/truck-2.jpg', 'Image 3')" id="myImg2">
+            <img src="assets/truck-3.jpg" alt="Image 4" (click)="openModal('assets/truck-3.jpg', 'Image 4')" id="myImg3">
+        </div>  
+    </div>
+</div> 
+
+<div id="myModal" class="modal">
+    <span class="close" (click)="closeModal()">&times;</span>
+    <img class="modal-content" id="img01" [src]="modalImageSrc" >
+    <div id="caption">{{ modalCaption }}</div>
+</div>
+
+
+
+
+
+
+

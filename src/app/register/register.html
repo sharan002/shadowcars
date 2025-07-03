@@ -1,0 +1,88 @@
+<div class="container">
+  <div class="body d-md-flex align-items-center justify-content-between">
+    <div class="box-1 mt-md-0 mt-5 col-md-6">
+      <img src="assets/x2.jpg"
+        alt="Image 1"
+        style="width: 300px; height: 438px;">
+    </div>
+
+    <div class="box-2 d-flex flex-column h-100 col-md-6">
+      <div class="mt-5">
+        <form #f="ngForm" (ngSubmit)="register(f)">
+          <div class="box">
+        
+            <div class="pass">
+              <input
+                type="text"
+                id="inp"
+                placeholder="Name"
+                name="naming"
+                ngModel
+                #naming="ngModel"
+                required
+                class="form-control"
+                [ngClass]="{'is-invalid': naming.touched && naming.invalid}"
+              >
+            </div>
+            <div class="alert alert-danger custom-error" *ngIf="naming.touched && naming.invalid" id="err">
+              Name is required
+            </div>
+
+            <div class="phone">
+              <input
+                type="text"
+                id="inp"
+                placeholder="Email or Phone number"
+                name="phone"
+                ngModel
+                #phone="ngModel"
+                required
+                class="form-control"
+                [ngClass]="{'is-invalid': phone.touched && phone.invalid}"
+              >
+            </div>
+            <div class="alert alert-danger custom-error" *ngIf="phone.touched && phone.invalid" id="err">
+              Email id is required
+            </div>
+
+            <div class="pass">
+              <input
+                type="password"
+                id="inp"
+                placeholder="Password"
+                name="pass"
+                ngModel
+                #pass="ngModel"
+                required
+                class="form-control"
+                [ngClass]="{'is-invalid': pass.touched && pass.invalid}"
+              >
+            </div>
+            <div class="alert alert-danger custom-error" *ngIf="pass.touched && pass.invalid" id="err">
+              Password is required
+            </div>
+          <br>
+            <div class="button">
+              <button class="btn btn-primary" type="submit" [disabled]="f.invalid" id="butt">Register</button>
+            </div>
+          </div>
+        </form>
+
+        <div class="go-back-button">
+          <button class="btn custom-go-back-btn" type="button" (click)="goBack()">Go Back</button>
+        </div>
+      </div>
+
+      <div class="mt-auto">
+        <p class="footer text-muted mb-0 mt-md-0 mt-4">By registering, you agree with our
+          <span class="p-color me-1">terms and conditions</span>
+          and
+          <span class="p-color ms-1">privacy policy</span>
+        </p>
+      </div>
+    </div>
+
+    <span class="fas fa-times"></span>
+  </div>
+</div>
+

@@ -4,11 +4,9 @@
 
     <div class="box-1 mt-md-0 mt-5 col-md-6">
 
-      <img src="assests/dragongif.gif"
-
-           alt="Image 1"
-
-           style="width: 300px; height: 438px;">
+      <img src="facebook.png"
+     alt="Image 1"
+     style="width: 300px; height: 438px; object-fit: cover;">
 
     </div>
 
@@ -96,9 +94,15 @@
 
             <br>
 
+                <div *ngIf="loading" class="text-primary mb-2">
+  <div class="spinner-border spinner-border-sm" role="status"></div>
+  <span class="ms-1">Loading...</span>
+</div>
+
+
             <div class ="button" >
 
-                <button class="btn btn-primary" type="submit" [disabled]="f.invalid"  id="butt">  Log in   </button>
+                <button class="btn btn-primary" type="submit" [disabled]="f.invalid || loading"  id="butt">  Log in   </button>
 
             </div>
 
@@ -110,7 +114,7 @@
 
          <div class="containerr" id="register">
 
-          <p>Don't have an account? <a [routerLink]="['/register']" (click)="showRegistrationForm()">Click here</a></p>
+          <p>Don't have an account? <a [routerLink]="['/register']">Click here</a></p>
 
         </div>
 
@@ -140,6 +144,5 @@
 
     <span class="fas fa-times"></span>
 
-  </div>
 
   
