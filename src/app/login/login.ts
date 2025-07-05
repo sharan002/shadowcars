@@ -16,13 +16,11 @@ export class Login {
 
 endpoint = '/login';
   domain: string;
-  ENV = {
-apiUrl : 'https://automationexercise.com/api/productsList'
-  }
+
   valid: boolean = true;
 
   constructor(private router: Router, private http: HttpClient) {
-    this.domain = this.ENV?.apiUrl
+    this.domain = environment.apiUrl
 
   }
 
@@ -37,24 +35,31 @@ apiUrl : 'https://automationexercise.com/api/productsList'
       phone: f.value.phone,
       pass: f.value.pass
     };
-    console.log(f);
+    console.log(userData);
+
+console.log(`${this.domain}${this.endpoint}`);
+
+  this.http.post(`${this.domain}${this.endpoint}`, userData).subscribe(
+    (response: any) => {
+      this.loading = false;
+      this.valid = response.userExists;
+
+      if (response.userExists) {
+        this.router.navigate(['/intro']);
+      } else {
+        console.log("USER DOES NOT EXIST");
+        f.reset(); 
+      }
+    },
+    (error: any) => {
+      this.loading = false;
+      console.error('Login failed:', error);
+      alert("LOGIN FAILED");
+      f.reset(); 
+    }
+  );
 
 
-
-    // this.http.post(`${this.domain}${this.endpoint}`, userData).subscribe(
-    //   (response: any) => {
-    //     this.valid = response.userExists;
-    //     if (response.userExists) {
-    //       this.router.navigate(['/about']);
-    //     } else {
-    //       console.log("USER DOES NOT EXIST");
-    //     }
-    //   },
-    //   (error) => {
-    //     console.error('Login failed:', error);
-    //     alert("LOGIN FAILED")
-    //   }
-    // );
 
     
   }

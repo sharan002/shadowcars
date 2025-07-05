@@ -65,6 +65,11 @@
             <div class="button">
               <button class="btn btn-primary" type="submit" [disabled]="f.invalid" id="butt">Register</button>
             </div>
+            <br>
+                            <div *ngIf="loading" class="text-primary mb-2">
+  <div class="spinner-border spinner-border-sm" role="status"></div>
+  <span class="ms-1">Please wait you will be redirected</span>
+</div>
           </div>
         </form>
 
