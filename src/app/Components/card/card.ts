@@ -9,6 +9,10 @@ import { Component } from '@angular/core';
 })
 export class Card {
 
+  log(event : any){
+console.log(event)
+  }
+
   showMoreInfo1 = false;
   showMoreInfo2 = false;
   showMoreInfo3 = false;
