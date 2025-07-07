@@ -1,0 +1,268 @@
+/* Improved spacing for labels */
+.filter-item {
+  display: inline-block; /* Display filter items in a line */
+  margin-right: 20px; /* Add some spacing between filter items */
+}
+
+/* Stylish filter input */
+.filter-input {
+  padding: 8px;
+  border: 2px solid #2149ec;
+  border-radius: 5px;
+  /* margin-right: 30px; */ /* You can remove this line now */
+}
+
+/* Improved spacing for labels */
+.filter-item label, .mb-3 label {
+  margin-bottom: 8px;
+  display: block;
+  font-weight: bold;
+  color: #555;
+}
+
+
+.img-carousel {
+  height: 100px; 
+  object-fit: cover; 
+}
+/* Set specific size for images with the "car-image" class */
+.car-image {
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  object-fit: cover; /* Adjust the object-fit property as needed */
+}
+
+td img {
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  object-fit: cover; /* Adjust the object-fit property as needed */
+}
+
+
+td button + button {
+  margin-left: 5px;
+  border-left: 1px solid #ccc;
+}
+
+/* Adjust button padding */
+td button {
+  padding: 8px;
+}
+
+/* Improved spacing for labels */
+.mb-3 label {
+  margin-bottom: 8px;
+}
+
+/* Container styling for better alignment */
+.container {
+  margin-top: 30px;
+}
+
+/* Refined input styling */
+.filter-item input[type="text"],
+.filter-item input[type="number"] {
+  margin-bottom: 12px;
+  width: 50%;
+  padding: 8px; /* Add padding for a comfortable input experience */
+  border: 1px solid #ccc; /* Subtle border for a professional touch */
+  border-radius: 4px;
+}
+
+/* Bold and legible labels */
+label {
+  font-weight: bold;
+  color: #555; /* Slightly darker color for better contrast */
+}
+
+
+table {
+  width: 100%;
+  max-width: 1200px; /* Adjust the maximum width as needed */
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  margin-top: 10px; /* Add some margin to the top of the table */
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px; /* Increase padding for better readability */
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+button {
+  background-color: #2149ec;
+  color: #fff;
+  border: none;
+  padding: 10px 10px; /* Adjust padding for better button size */
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #7fa5ff;
+}
+
+.btn i {
+  margin-right: 5px; /* Add some space between the icon and text */
+  font-size: 1.2rem; /* Adjust the icon size as needed */
+}
+
+/* Center the text in the action column */
+td.text-center {
+  text-align: center;
+}
+
+.enlarge-image {
+  width: 200px;
+  height: 200px;
+  transition: all 0.5s ease-in-out; 
+}
+
+.enlarge-image:hover {
+  cursor: pointer;
+  transform: scale(2.0); 
+}
+
+/* Improved spacing for labels */
+.filter-item {
+  display: inline-block; /* Display filter items in a line */
+  margin-right: 20px; /* Add some spacing between filter items */
+}
+
+/* Stylish filter input */
+.filter-input {
+  padding: 8px;
+  border: 2px solid #2149ec;
+  border-radius: 5px;
+  /* margin-right: 30px; */ /* You can remove this line now */
+}
+
+/* Improved spacing for labels */
+.filter-item label, .mb-3 label {
+  margin-bottom: 8px;
+  display: block;
+  font-weight: bold;
+  color: #555;
+}
+
+
+.img-carousel {
+  height: 100px; 
+  object-fit: cover; 
+}
+/* Set specific size for images with the "car-image" class */
+.car-image {
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  object-fit: cover; /* Adjust the object-fit property as needed */
+}
+
+td img {
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  object-fit: cover; /* Adjust the object-fit property as needed */
+}
+
+
+td button + button {
+  margin-left: 5px;
+  border-left: 1px solid #ccc;
+}
+
+/* Adjust button padding */
+td button {
+  padding: 8px;
+}
+
+/* Improved spacing for labels */
+.mb-3 label {
+  margin-bottom: 8px;
+}
+
+/* Container styling for better alignment */
+.container {
+  margin-top: 30px;
+}
+
+/* Refined input styling */
+.filter-item input[type="text"],
+.filter-item input[type="number"] {
+  margin-bottom: 12px;
+  width: 50%;
+  padding: 8px; /* Add padding for a comfortable input experience */
+  border: 1px solid #ccc; /* Subtle border for a professional touch */
+  border-radius: 4px;
+}
+
+/* Bold and legible labels */
+label {
+  font-weight: bold;
+  color: #555; /* Slightly darker color for better contrast */
+}
+
+
+table {
+  width: 100%;
+  max-width: 1200px; /* Adjust the maximum width as needed */
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  margin-top: 10px; /* Add some margin to the top of the table */
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px; /* Increase padding for better readability */
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+button {
+  background-color: #2149ec;
+  color: #fff;
+  border: none;
+  padding: 10px 10px; /* Adjust padding for better button size */
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #7fa5ff;
+}
+
+.btn i {
+  margin-right: 5px; /* Add some space between the icon and text */
+  font-size: 1.2rem; /* Adjust the icon size as needed */
+}
+
+/* Center the text in the action column */
+td.text-center {
+  text-align: center;
+}
+
+.enlarge-image {
+  width: 200px;
+  height: 200px;
+  transition: all 0.5s ease-in-out; 
+}
+
+.enlarge-image:hover {
+  cursor: pointer;
+  transform: scale(2.0); 
+}
+
