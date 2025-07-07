@@ -1,17 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Navbar } from '../Components/navbar/navbar';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { environment } from '../../Environments/environment';
 import { CommonModule } from '@angular/common';
-
+import { ChangeDetectorRef } from '@angular/core';
 @Component({
   selector: 'app-carlist',
   imports: [FormsModule,Navbar,CommonModule],
   templateUrl: './carlist.html',
   styleUrl: './carlist.css'
 })
-export class Carlist {
+export class Carlist implements OnInit {
 searchText: string = '';
   carsData: any[] = [];
   filteredCarsData: any[] = [];
@@ -24,8 +24,12 @@ searchText: string = '';
 
 
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient,private cdr: ChangeDetectorRef) {
+    console.log("Hii")
+    
     this.domain = environment.apiUrl
+    console.log(this.domain)
+    
    }
 
   ngOnInit(): void {
@@ -37,6 +41,7 @@ searchText: string = '';
     this.http.get<any[]>(`${this.domain}${this.GetC}`).subscribe(data => {
       this.carsData = data.map(car => ({ ...car, enlargeImage: false }));
       this.updateFilter();
+      this.cdr.detectChanges();
     });
   }
 
