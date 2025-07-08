@@ -1,0 +1,148 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.car-upload-form {
+  width: 50%;
+  margin: auto;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.custom-file-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.custom-file-upload input[type=file] {
+  font-size: 0;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 10px; /* Add margin to separate the button from the file input */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.side-by-side-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.car-info,
+.selected-image {
+  width: 48%;
+}
+
+.info-box,
+.image-box {
+  border: 3px solid #5e91ff;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.image-box img {
+  max-width: 100%;
+  height: auto;
+  margin: 5px;
+}
+
+.custom-file-upload {
+  position: relative;
+  overflow: hidden;
+}
+
+#fileUpload {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.btn-upload {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-upload:hover {
+  background-color: #2e3133;
+}
+
+.custom-file-upload {
+  position: relative;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.custom-file-input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.custom-file-label {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.custom-file-input:focus + .custom-file-label,
+.custom-file-label:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+

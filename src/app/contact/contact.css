@@ -1,0 +1,98 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 9px;
+  background-color: #0033ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.box:hover {
+  background-color: #7fa5ff;
+}
+
+.box span {
+  font-size: 29px;
+}
+
+.box + .box {
+  margin-left: 20px;
+}
+
+.card-body {
+  margin-right: 50px;
+}
+
+.card-body.d-flex.justify-content-center.align-items-center#youtube a:hover {
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #007bff;
+}
+
+
+
+  #icon-container {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    padding: 6px;
+    border: 1px solid #858585;
+    border-radius: 10px;
+  }
+  .social-icon {
+    width: 50px; /* Set the common width for all icons */
+    height: 50px; /* Set the common height for all icons */
+  }
+  
+  .card-body {
+    margin: 0 20px; 
+    text-align: center;
+  }
+
+.alert-message {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+padding: 20px;
+background-color: #007bff;
+color: #fff;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+z-index: 9999;
+max-width: 600px; 
+text-align: center; 
+}
+
+.alert-message h2 {
+margin-bottom: 10px;
+}
+
+.alert-message p {
+margin-bottom: 7; 
+}
+
+
+@keyframes fadeIn {
+from {
+  opacity: 0;
+}
+to {
+  opacity: 1;
+}
+}
+
+.alert-message {
+animation: fadeIn 1.0s ease-in-out; 
+}
